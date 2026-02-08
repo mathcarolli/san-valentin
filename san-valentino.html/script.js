@@ -21,7 +21,7 @@ function createParticles() {
 }
 
 // ============================================
-// MUSICA
+// MUSICA a
 // ============================================
 let musicPlaying = false;
 const music = document.getElementById('bgMusic');
