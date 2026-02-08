@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Per Stefania 💜</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Musica di sottofondo -->
+    <audio id="bgMusic" loop>
+    <source src="music/love-song.mp3#t=74" type="audio/mpeg">
+</audio>
+    
+    <!-- Bottone musica -->
+    <button id="musicToggle" onclick="toggleMusic()">🎵 Attiva Musica</button>
+
+    <!-- Particelle viola background -->
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <!-- Sezione Domanda -->
+        <div id="questionSection">
+            <h1 class="title">💜 San Valentino 💜</h1>
+            
+            <div class="question-card">
+                <p class="question-text">
+                    Ciao <span class="stefania-name">Picollina mia</span>'io ho provato amo'
+                    <br><br>
+                    Vuoi essere la mia Valentine? 💘
+                </p>
+                
+                <!-- Solo il bottone SÌ rimane fisso, NO è libero! -->
+                <div class="yes-container">
+                    <button class="btn-yes" onclick="sayYes()">
+                        SÌ 💚
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottone NO LIBERO DI SCAPPARE OVUNQUE -->
+        <button class="btn-no" id="btnNo" onmouseover="runAway()" onclick="runAway()">
+            NO 💔
+        </button>
+
+        <!-- Sezione Successo -->
+        <div class="success-message" id="successMessage">
+            <div class="big-heart">💖</div>
+            <h2 class="success-text">brava Stefania!</h2>
+            <p class="success-subtext">
+                hai visto che riesci amore mio!<br>
+                Eu Te amo meu amor 🌹💜
+            </p>
+            <div class="big-heart">💕💕💕</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
